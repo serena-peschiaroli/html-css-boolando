@@ -30,9 +30,51 @@ img {max-width: 100%;}
 }
 .cards {
     width: calc(80% / 3);
+    position: relative;
+}
+
+.card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
 .card-description {
     display: flex;
     flex-direction: column;
 }
+
+.price-discount {
+    display: flex;
+    flex-direction: row;
+}
+
+.brand {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.type {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.price {
+    color: black;
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.discount {
+    color: red;
+    font-size: 1rem;
+}
+
+/* HOVER */
+
+.cards:hover .card-hover {
+    display: inline;
+}
+    
